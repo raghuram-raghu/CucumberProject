@@ -33,7 +33,13 @@ public class ExtentReportManager {
          }
         return extent;
 
+    }
 
+    public static ExtentTest createTest(String testName){
+
+        test = getReportInstance().createTest(testName);
+
+        return test;
     }
 
 }
